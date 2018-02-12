@@ -130,8 +130,8 @@ create_react_app --scripts-version="$scripts_path" test-app-reason-scripts
 cd test-app-reason-scripts
 
 # Check corresponding scripts version is installed.
-exists node_modules/reason-scripts
-grep '"reason-scripts": ' package.json
+exists node_modules/js-with-reason-scripts
+grep '"js-with-reason-scripts": ' package.json
 checkDependencies
 
 # Cleanup
