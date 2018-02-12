@@ -1,14 +1,14 @@
 {
-  "name": "reason-scripts",
-  "version": "0.8.0",
-  "description": "Scripts for Create React App with ReasonML.",
-  "repository": "reasonml-community/reason-scripts",
+  "name": "js-reason-scripts",
+  "version": "0.1.0",
+  "description": "Scripts for mixing in ReasonML with Create React App.",
+  "repository": "rjsamson/js-reason-scripts",
   "license": "MIT",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/reasonml-community/reason-scripts/issues"
+    "url": "https://github.com/rjsamson/js-reason-scripts/issues"
   },
   "files": [
     "bin",
