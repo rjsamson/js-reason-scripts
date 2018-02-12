@@ -2,7 +2,7 @@
   JS with Reason Scripts
  </h1>
 
-<center>a fork of [Reason Scripts](https://github.com/reasonml-community/reason-scripts)</center>
+A fork of [Reason Scripts](https://github.com/reasonml-community/reason-scripts)
 
 <pre align="center">
   $ yarn create react-app my-app --scripts-version js-with-reason-scripts
