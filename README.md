@@ -1,21 +1,16 @@
 <h1 align="center">
-  <img height="300" src="https://github.com/rrdelaney/reason-scripts/blob/master/docs/cra.png">
-  <br>
-  Reason Scripts
+  JS with Reason Scripts - a fork of [Reason Scripts](https://github.com/reasonml-community/reason-scripts)
  </h1>
 
 <pre align="center">
-  $ yarn create react-app my-app --scripts-version reason-scripts
+  $ yarn create react-app my-app --scripts-version js-with-reason-scripts
 </pre>
 
-Reason Scripts provides a JS-like development environment for developing web apps with the
-[Reason](https://reasonml.github.io/) programming language and
-[React](https://facebook.github.io/react). It bootstraps an environment to automatically
+JS with Reason Scripts provides a JS entrypoint into a react app, with the ability to use [Reason](https://reasonml.github.io/) where you like while building your [React](https://facebook.github.io/react) app. It bootstraps an environment to automatically
 compile all Reason code to JS, provide features like reloading and bundling, and seamlessly
-use JS code from Reason.
+use JS code from Reason, and Reason from JS code.
 
-[![Build Status](https://travis-ci.org/reasonml-community/reason-scripts.svg?branch=master)](https://travis-ci.org/reasonml-community/reason-scripts)
-[![Build status](https://ci.appveyor.com/api/projects/status/ccnybhby3xbr9022?svg=true)](https://ci.appveyor.com/project/rrdelaney/reason-scripts)
+[![Build Status](https://travis-ci.org/rjsamson/js-with-reason-scripts.svg?branch=master)](https://travis-ci.org/rjsamson/js-with-reason-scripts)
 
 ## Getting Started
 
@@ -27,7 +22,7 @@ To create a new app using Reason and React, run:
 
 ```
 $ npm install -g bs-platform
-$ yarn create react-app <app-name> --scripts-version reason-scripts
+$ yarn create react-app <app-name> --scripts-version js-with-reason-scripts
 $ cd <app-name>
 $ yarn start
 ```
@@ -38,7 +33,7 @@ Make sure to install bs-platform globally using `npm` instead of `yarn`.
 
 ```
 $ npm install -g bs-platform create-react-app
-$ create-react-app <app-name> --scripts-version reason-scripts
+$ create-react-app <app-name> --scripts-version js-with-reason-scripts
 $ cd <app-name>
 $ npm start
 ```
@@ -58,10 +53,12 @@ Creating a new app makes an `<app-name>` directory with the following layout:
     favicon.ico
     index.html
   src/
-    index.re
+    index.js
     index.css
-    app.re
-    app.css
+    App.js
+    hello_reason.re
+    hello_reason_test.re
+    App.css
     logo.svg
 ```
 
@@ -79,8 +76,8 @@ Creating a new app makes an `<app-name>` directory with the following layout:
 
 ### Reason Entrypoint
 
-The entry point to the app is `src/index.re`. From the start your new
-app will be based on Reason, but can seamlessly interop with existing JS
+Unlike Reason Scripts, the entry point to the app is `src/index.js`. From the start your new
+app will be based on Javascript, but can seamlessly include ReasonML with existing JS
 files and projects!
 
 ### Automatic Compilation of Reason/OCaml files
@@ -172,7 +169,7 @@ See our full editor integration guide here: https://reasonml.github.io/docs/en/e
 
 
 <p><details>
-<summary><b>I don't want reason-scripts to clear my terminal</b></summary>
+<summary><b>I don't want js-with-reason-scripts to clear my terminal</b></summary>
 
 Use `FORCE_COLOR=true react-scripts start | cat -` as your start command instead
 </details></p>
@@ -181,6 +178,4 @@ Use `FORCE_COLOR=true react-scripts start | cat -` as your start command instead
 <summary><b>Reason is awesome! Where can I learn more?</b></summary>
 
 Checkout our fancy website: https://reasonml.github.io/!
-
-We also have a very active Discord to come talk about Reason, and ask for help: https://discordapp.com/invite/reasonml
 </details></p>
