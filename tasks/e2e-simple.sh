@@ -184,19 +184,19 @@ function verify_env_url {
 }
 
 function verify_module_scope {
-  # Save app.re, we're going to modify it
-  cp src/app.re src/app.re.bak
+  # Save hello_reason.re, we're going to modify it
+  cp src/hello_reason.re src/hello_reason.re.bak
 
   # Add an out of scope import
-  echo "open Nonexistent;" | cat - src/app.re > src/app.re.temp && mv src/app.re.temp src/app.re
+  echo "open Nonexistent;" | cat - src/hello_reason.re > src/hello_reason.re.temp && mv src/hello_reason.re.temp src/hello_reason.re
 
   # Make sure the build fails
   npm run build; test $? -eq 1 || exit 1
   # TODO: check for error message
 
-  # Restore app.re
-  rm src/app.re
-  mv src/app.re.bak src/app.re
+  # Restore hello_reason.re
+  rm src/hello_reason.re
+  mv src/hello_reason.re.bak src/hello_reason.re
   rm -rf lib
 }
 
