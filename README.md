@@ -1,6 +1,8 @@
 <h1 align="center">
-  JS with Reason Scripts - a fork of [Reason Scripts](https://github.com/reasonml-community/reason-scripts)
+  JS with Reason Scripts
  </h1>
+
+<center>a fork of [Reason Scripts](https://github.com/reasonml-community/reason-scripts)</center>
 
 <pre align="center">
   $ yarn create react-app my-app --scripts-version js-with-reason-scripts
