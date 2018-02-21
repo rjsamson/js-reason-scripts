@@ -213,6 +213,16 @@ module.exports = {
               },
             ],
           },
+          // Process SASS/SCSS
+          {
+              test: /\.s[ac]ss$/,
+              include: paths.appSrc,
+              loaders: [
+                  require.resolve('style-loader'),
+                  require.resolve('css-loader'),
+                  require.resolve('sass-loader')
+              ]
+          },
           {
             test: /\.(re|rei|ml|mli)$/,
             use: [
