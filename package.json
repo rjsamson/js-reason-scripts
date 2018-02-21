@@ -1,6 +1,6 @@
 {
   "name": "js-with-reason-scripts",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Scripts for mixing in ReasonML with Create React App.",
   "repository": "rjsamson/js-with-reason-scripts",
   "license": "MIT",
